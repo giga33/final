@@ -33,14 +33,18 @@
           <li><a class="nav-a" href="#">Townhomes</a></li>
           <li><a class="nav-a" href="#">Real Estate Agents</a></li>
         </ul>
-        <ul id="socicon" class="social-icons">
-          <li>
-            <a href="#">Log In</a>
-          </li>
-          <li>
-            <a href="#">Sign Up</a>
-          </li>
-        </ul>
+        <div>
+          <ul id="socicon" class="social-icons">
+            <li>
+              <a href="#">Log In</a>
+            </li>
+            <div class="sign-btn">
+              <li>
+                <a href="#">Sign Up</a>
+              </li>
+            </div>
+          </ul>
+        </div>
         <div id="burger-menu" class="burger-icon">
           <i class="fas fa-bars"></i>
         </div>
@@ -49,9 +53,43 @@
     <main class="main">
       <div class="banner-wrapper">
         <img src="images/banner.png" alt="banner logo" />
-        <div class="banner-text"><h1>Discover Your New Home</h1></div>
+        <div class="banner-text">
+          <h1>Discover Your New Home</h1>
+          <h3>Helping 100 million renters find their perfect fit.</h3>
+          <div class="form-wrapper">
+            <ul>
+              <li>Buy</li>
+              <li>Sell</li>
+              <li>Rent</li>
+              <li>Mortgage</li>
+            </ul>
+          </div>
+          <form action="#">
+            <div class="search-wrapper">
+              <label for="text"></label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Address, School, City, Zip or Neighborhood"
+                class="search-btn"
+              /><br />
+            </div>
+          </form>
+        </div>
       </div>
     </main>
+    <section class="area-section">
+      <div><h3>What’s Happening in Your Area</h3></div>
+      <div>
+        <p>
+          Whether you're in search of a new residence, an investment
+          opportunity, or simply exploring the area, we are here to assist you
+          in discovering precisely what meets your needs.
+        </p>
+      </div>
+      <div class="area-malibu"><p>Malibu, California</p></div>
+    </section>
 
     <!-- Js Link -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

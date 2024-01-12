@@ -19,6 +19,21 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.sign-btn {
+  width: 79px;
+  height: 34px;
+  background: rgb(154, 2, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(154, 2, 2, 1) 0%,
+    rgba(241, 79, 5, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(85, 8, 8, 0.75);
+  transition: 1s;
+}
 .menu-ul {
   font-weight: 400;
 }
@@ -28,6 +43,7 @@ a {
 ul {
   padding: 0 0;
   display: flex;
+  align-items: center;
 }
 .burger-icon {
   display: none;
@@ -38,11 +54,88 @@ ul {
   height: 600px;
 }
 .banner-wrapper {
+  display: flex;
   position: relative;
+  width: 1360px;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner-text {
+  flex-direction: column;
   position: absolute;
+  color: #fff;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+.form-wrapper {
+  display: flex;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  justify-content: center;
+
+  li {
+    padding-left: 40px;
+    font-weight: 300;
+  }
+}
+.search-wrapper {
+}
+.search-btn {
+  width: 625px;
+  height: 60px;
+  border-radius: 35px;
+}
+.area-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: #2b2b2b;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 92px;
+  }
+  p {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    width: 792px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+.area-malibu {
+  p {
+    color: #2b2b2b;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 }
 /* Responsive */
 @media (max-width: 768px) {
@@ -62,7 +155,7 @@ ul {
     text-align: left;
   }
   .burger-icon {
-    color: #fff;
+    color: #ec3d3d;
     display: block;
     font-size: 30px;
     position: absolute;
