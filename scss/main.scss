@@ -59,13 +59,13 @@ ul {
 }
 .main {
   margin: auto;
-  width: 1360px;
-  height: 600px;
+  //   width: 1360px;
+  //   height: 600px;
 }
 .banner-wrapper {
   display: flex;
   position: relative;
-  width: 1360px;
+  //   width: 1360px;
   height: 600px;
   align-items: center;
   justify-content: center;
@@ -136,6 +136,12 @@ ul {
     margin-bottom: 24px;
   }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .area-malibu {
   p {
     color: #2b2b2b;
@@ -147,13 +153,14 @@ ul {
   }
 }
 .info-section {
-  width: 1160px;
-  height: 157px;
+  //   width: 1160px;
+  //   height: 157px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .info-box {
+  margin-left: 1rem;
   width: 275px;
   height: 157px;
   display: flex;
@@ -280,7 +287,7 @@ ul {
   width: 970px;
   height: 290px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin: auto;
   margin-bottom: 80px;
@@ -321,10 +328,79 @@ ul {
     }
   }
 }
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banner-text {
+  padding: 20px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .mail-section,
+  .section-cities {
+    width: auto;
+  }
+
+  .house-section {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .houses-wrapper,
+  .house-logos {
+    display: none;
+  }
+
+  .info-section {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }
+  .container {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .form-wrapper ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form-wrapper ul li {
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .search-wrapper {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 0.5em;
+  }
+
   .wrapper,
   ul {
+    z-index: 1;
     display: block;
     text-align: center;
   }
