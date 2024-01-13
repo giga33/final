@@ -131,7 +131,6 @@ ul {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    width: 792px;
     margin-top: 24px;
     margin-bottom: 24px;
   }
@@ -218,6 +217,10 @@ ul {
   margin: auto;
   display: flex;
   margin-top: 48px;
+  justify-content: space-evenly;
+  .house-box-wrapper {
+    padding-right: 2rem;
+  }
 }
 .continue-house-box {
   width: 240px;
@@ -432,5 +435,34 @@ ul {
   }
   .social-icons.open-socicon {
     display: flex;
+  }
+  .nav-a {
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-a {
+    padding-bottom: 8px;
+  }
+  .form-wrapper {
+    display: none;
+  }
+
+  .house-section {
+    margin-top: 0rem;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+  }
+
+  .container {
+    margin-bottom: 0rem;
+    flex-direction: column;
+  }
+
+  .info-box {
+    margin-bottom: 1rem;
   }
 }
